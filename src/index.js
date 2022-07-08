@@ -41,7 +41,7 @@ class WebpackCleanCommentsPlugin {
             },
             (compilationAssets, callback) => {
               // eslint-disable-next-line no-console
-              console.log('compilationAssets', compilationAssets);
+              // console.log('compilationAssets', compilationAssets);
               this.processAssets(compilation.assets).filter(Boolean).forEach(
                 ({ filename, source }) => {
                   compilation.updateAsset(filename, source);
